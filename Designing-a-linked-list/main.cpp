@@ -1,0 +1,68 @@
+#include <iostream>
+#include "LinkedList.h"
+using namespace std;
+
+int main() {
+  LinkedList<string>* strings = NULL;
+  strings = new LinkedList<string>{};
+  cout << strings->size() << endl;
+  cout << strings->toString() << endl;
+  cout << strings->at(0) << endl;
+  cout << strings->at(1) << endl;
+  strings->insertTail("lazy");
+  cout << strings->size() << endl;
+  cout << strings->toString() << endl;
+  strings->insertHead("lazy");
+  cout << strings->size() << endl;
+  cout << strings->toString() << endl;
+  strings->insertAfter("dog.", "lazyy");
+  cout << strings->size() << endl;
+  cout << strings->toString() << endl;
+  strings->insertAfter("dog.", "lazy");
+  cout << strings->size() << endl;
+  cout << strings->toString() << endl;
+  strings->insertTail("dog.");
+  cout << strings->size() << endl;
+  cout << strings->toString() << endl;
+  strings->insertHead("fox");
+  cout << strings->size() << endl;
+  cout << strings->toString() << endl;
+  strings->insertHead("brown");
+  cout << strings->size() << endl;
+  cout << strings->toString() << endl;
+  strings->insertHead("quick");
+  cout << strings->size() << endl;
+  cout << strings->toString() << endl;
+  strings->insertHead("The");
+  cout << strings->size() << endl;
+  cout << strings->toString() << endl;
+  strings->insertAfter("quick", "brown");
+  cout << strings->size() << endl;
+  cout << strings->toString() << endl;
+  strings->insertTail("fox");
+  cout << strings->size() << endl;
+  cout << strings->toString() << endl;
+  strings->insertAfter("the", "fox");
+  cout << strings->size() << endl;
+  cout << strings->toString() << endl;
+  strings->insertAfter("jumps", "fox");
+  cout << strings->size() << endl;
+  cout << strings->toString() << endl;
+  strings->insertAfter("over", "jumps");
+  cout << strings->size() << endl;
+  cout << strings->toString() << endl;
+  cout << strings->size() << endl;
+  cout << strings->toString() << endl;
+  cout << strings->at(0) << endl;
+  cout << strings->at(1) << endl;
+  cout << strings->at(2) << endl;
+  cout << strings->at(3) << endl;
+  cout << strings->at(4) << endl;
+  cout << strings->at(5) << endl;
+  cout << strings->at(6) << endl;
+  cout << strings->at(7) << endl;
+  cout << strings->at(8) << endl;
+  cout << strings->at(9) << endl;
+  cout << strings->at(-1) << endl;
+  delete strings;
+}
